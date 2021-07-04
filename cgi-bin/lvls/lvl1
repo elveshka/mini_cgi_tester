@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<HTML lang="en">
+<HEAD><TITLE>Level 1</TITLE></HEAD>
+<BODY>
+<H1>Level 1</H1>
+<HR>
+
+<FORM ACTION="/cgi-bin/victorine.pl" METHOD="POST">
+	<BR>
+	Do you know the way?: <BR>
+	<SELECT NAME="card" SIZE=5>
+		<OPTION>Yes
+		<OPTION>No
+		<OPTION>koshka
+		<OPTION SELECTED>Sobaka
+	</SELECT>
+	<INPUT TYPE="hidden" NAME="lvl" VALUE="2">
+	<INPUT TYPE="submit" VALUE="Answer">
+</FORM>
+<HR>
+</BODY>
+</HTML>

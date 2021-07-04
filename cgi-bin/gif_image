@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+$gif_image = "cgi-bin/alpaca.gif";
+if (open (IMAGE, "<" . $gif_image)) {
+        $no_bytes = (stat ($gif_image))[7];
+        $piece_size = $no_bytes / 10;
+        print "Content-type: image/gif", "\n";
+        print "Content-length: $no_bytes", "\n\n";
+        for ($loop=0; $loop <= $no_bytes; $loop += $piece_size) {
+                $num = read (IMAGE, $data, $piece_size);
+            print $data, "\n";
+        }
+         close (IMAGE);
+} else {
+        print "Content-type: text/plain", "\n\n";
+        print "Sorry! I cannot open the file $gif_image!", "\n";
+}
+exit (0);

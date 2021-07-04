@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+print "Content-type: text/html", "\r\n\r\n";
+print "<HTML>", "\r\n";
+print "<HEAD><TITLE>About this Server</TITLE></HEAD>", "\r\n";
+print "<BODY><H1>About this Server</H1>", "\r\n";
+print "<HR><PRE>";
+print "Server Name:      ", $ENV{'SERVER_NAME'}, "<BR>", "\r\n";
+print "Running on Port:  ", $ENV{'SERVER_PORT'}, "<BR>", "\r\n";
+print "Server Software:  ", $ENV{'SERVER_SOFTWARE'}, "<BR>", "\r\n";
+print "Server Protocol:  ", $ENV{'SERVER_PROTOCOL'}, "<BR>", "\r\n";
+print "CGI Revision:     ", $ENV{'GATEWAY_INTERFACE'}, "<BR>", "\r\n";
+print "<HR></PRE>", "\r\n";
+print "</BODY></HTML>", "\r\n";
+exit (0);
