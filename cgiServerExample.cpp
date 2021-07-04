@@ -24,7 +24,7 @@ int main(){
 	char * const argv[4] = {
 			(char * const )"/usr/bin/perl",
 			(char * const )"gif_image",
-			(char * const )"./icons/alpaca.gif",
+			(char * const )"t.gif",
 			nullptr
 		};
 	// const char ** env = (const char **)malloc(sizeof (const char *) * 19);
